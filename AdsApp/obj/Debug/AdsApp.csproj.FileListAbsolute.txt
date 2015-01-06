@@ -10,3 +10,9 @@ D:\SoftUni\SecondSemester\SPAAngularJS\Projects\SPAWithAngularJS\AdsApp\bin\AdsA
 D:\SoftUni\SecondSemester\SPAAngularJS\Projects\SPAWithAngularJS\AdsApp\obj\Debug\AdsApp.csprojResolveAssemblyReference.cache
 D:\SoftUni\SecondSemester\SPAAngularJS\Projects\SPAWithAngularJS\AdsApp\obj\Debug\AdsApp.dll
 D:\SoftUni\SecondSemester\SPAAngularJS\Projects\SPAWithAngularJS\AdsApp\obj\Debug\AdsApp.pdb
+D:\SoftUni\SecondSemester\SPAAngularJS\Projects\AdsAngularJSProject\AdsApp\bin\AdsApp.dll.config
+D:\SoftUni\SecondSemester\SPAAngularJS\Projects\AdsAngularJSProject\AdsApp\bin\AdsApp.dll
+D:\SoftUni\SecondSemester\SPAAngularJS\Projects\AdsAngularJSProject\AdsApp\bin\AdsApp.pdb
+D:\SoftUni\SecondSemester\SPAAngularJS\Projects\AdsAngularJSProject\AdsApp\obj\Debug\AdsApp.csprojResolveAssemblyReference.cache
+D:\SoftUni\SecondSemester\SPAAngularJS\Projects\AdsAngularJSProject\AdsApp\obj\Debug\AdsApp.dll
+D:\SoftUni\SecondSemester\SPAAngularJS\Projects\AdsAngularJSProject\AdsApp\obj\Debug\AdsApp.pdb
