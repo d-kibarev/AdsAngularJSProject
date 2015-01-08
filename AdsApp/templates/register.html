@@ -1,44 +1,47 @@
-﻿<div class="container">
+﻿<header id="app-header">
+    <h1>Ads - {{headerTitle}}</h1>
+</header>
+<div class="container">
     <h1>User Registration</h1>
 
     <div class="ui form segment">
             <div class="field">
                 <label for="Username">Username</label>
-                <input id="Username" placeholder="Username" type="text" />
+                <input id="Username" placeholder="Username" type="text" ng-model="user.username"/>
             </div>
         <div class="two fields">
             <div class="field">
                 <label for="Password">Password</label>
-                <input id="Password" type="password">
+                <input id="Password" type="password" placeholder="Password" ng-model="user.password">
             </div>
 
             <div class="field">
                 <label for="PasswordConfirm">Password Confirm</label>
-                <input id="PasswordConfirm" type="password">
+                <input id="PasswordConfirm" type="password" placeholder="Password Confirm" ng-model="user.confirmPassword">
             </div>
 
             <div class="field">
                 <label for="Name">Name</label>
-                <input id="Name" placeholder="Name" type="text">
+                <input id="Name" placeholder="Name" type="text" ng-model="user.name">
             </div>
 
             <div class="field">
                 <label for="Email">Email</label>
-                <input id="Email" placeholder="Email" type="text">
+                <input id="Email" placeholder="Email" type="text" ng-model="user.email">
             </div>
 
             <div class="field">
                 <label for="Phone">Phone</label>
-                <input id="Phone" placeholder="Phone" type="number">
+                <input id="Phone" placeholder="Phone" type="number" ng-model="user.phone">
             </div>
 
             <div class="field">
                 <label for="Town">Town</label>
-                <select id="Town" ng-options="town.id as town.name for town in towns" ng-model="selected.town.id"></select>
+                <select id="Town" ng-options="town.id as town.name for town in towns" ng-model="user.selected.town.id"></select>
             </div>
             
         </div>
 
-        <button class="btn btn-primary">Submit</button>
+        <button class="btn btn-primary" ng-click="register(user)">Submit</button>
     </div>
 </div>
