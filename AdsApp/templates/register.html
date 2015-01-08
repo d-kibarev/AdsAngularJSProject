@@ -32,12 +32,13 @@
                 <input id="Phone" placeholder="Phone" type="number">
             </div>
 
-            <select ng-options="item.subItem as item.label for item in values track by item.id" ng-model="selected">
-                
-               
-            </select>
+            <div class="field">
+                <label for="Town">Town</label>
+                <select id="Town" ng-options="town.id as town.name for town in towns" ng-model="selected.town.id"></select>
+            </div>
+            
         </div>
 
-        <button class="ui blue button">Submit</button>
+        <button class="btn btn-primary">Submit</button>
     </div>
 </div>
