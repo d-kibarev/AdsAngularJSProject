@@ -365,6 +365,7 @@
     <Content Include="lib\bootstrap\dist\js\bootstrap.js" />
     <Content Include="lib\bootstrap\dist\js\bootstrap.min.js" />
     <Content Include="lib\bootstrap\dist\js\npm.js" />
+    <Content Include="lib\jquery.noty\jquery.noty.js" />
     <Content Include="lib\jQuery\jquery-2.1.3.min.js" />
     <Content Include="lib\semantic\semantic.js" />
     <Content Include="templates\directives\categories.html" />

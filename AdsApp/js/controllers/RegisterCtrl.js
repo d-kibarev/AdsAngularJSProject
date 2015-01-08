@@ -1,6 +1,6 @@
 ﻿'use strict';
 app.controller('RegisterCtrl', ['$scope', 'towns', function ($scope, towns) {
-    $scope.headerTitle = 'Register';
+    $scope.headerTitle = 'Registration';
 
     towns.getTowns()
     .$promise

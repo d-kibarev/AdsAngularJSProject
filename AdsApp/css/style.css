@@ -54,6 +54,8 @@ ul.ads li {
 }
 
 .box {
+    font:black;
+    border-radius:15px;
     width: 100%;
     display: block;
     background: #A9D18E;
@@ -112,7 +114,6 @@ ul.sidebar-menu li a, ul.sidebar-menu li a:focus {
 }
 
 .button, .button:focus {
-    color: white;
     font-size: 14px;
     font-weight: bold;
     text-shadow: rgba(0, 0, 0, 0.5) 1px 1px 1px;

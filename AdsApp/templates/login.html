@@ -1,10 +1,13 @@
 ﻿<header id="app-header">
     <h1>Ads - {{headerTitle}}</h1>
 </header>
-<div class="container" style="width:450px">
-    <div class="row">
-        <div class="panel panel-default">
-            <div class="panel-body">
+<div class="row">
+    <div class="col-md-2">
+        <left-sidebar1></left-sidebar1>
+    </div>
+    <div class="col-md-7">
+        <div style="width:450px;">
+            <div class="box">
                 <div class="page-header">
                     <h3>Login</h3>
                 </div>
@@ -24,10 +27,14 @@
                         </div>
                     </div>
                     <hr />
-                    <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-lock"></span> Login</button>
-                    <a href="#/register" style="text-decoration: none; border-bottom: blue 1px dotted;">Register here</a>
-             </form>
-             </div>
+                    <div class="form-group" style="text-align:center">
+                        <button type="submit" class="button"><span class="glyphicon glyphicon-lock"></span> Login</button>
+                        <a href="#/register" style="text-decoration: none; border-bottom: blue 1px dotted;">Register here</a>
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
 </div>
+
+
