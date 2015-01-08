@@ -58,7 +58,7 @@ ul.ads li {
     display: block;
     background: #A9D18E;
     border: #507E32 1px solid;
-    margin: 15px 0;
+    margin: 15px 5px;
     padding: 10px;
     box-shadow: rgba(80, 126, 50, 0.5) 0.5px 0.5px 3px;
 }

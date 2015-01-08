@@ -1,6 +1,9 @@
 ﻿'use strict';
-var app = angular.module('adsApp', ['ngRoute','ngResource']);
+
+var app = angular.module('adsApp', ['ngRoute', 'ngResource']);
+
 app.constant('baseUrl', 'http://softuni-ads.azurewebsites.net/api/');
+
 app.config(['$routeProvider', function ($routeProvider) {
     $routeProvider.when('/', {
         templateUrl: 'templates/home.html',
