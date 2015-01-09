@@ -2,6 +2,8 @@
     <h1>Towns</h1>
     <hr />
     <ul class="sidebar-menu">
-        <li ng-repeat="town in towns">{{town.name}}</li>
+        <li ng-repeat="town in towns"
+            ng-click="townClicked(town.id)"
+            ng-class="{'selected':selectedTownId==town.id}">{{town.name}}</li>
     </ul>
 </div>

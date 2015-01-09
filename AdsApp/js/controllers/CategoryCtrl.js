@@ -8,4 +8,8 @@ app.controller('CategoryCtrl', ['$scope', 'categoryService', function ($scope, c
         $scope.categories = data;
     });
 
+    $scope.categoryClicked = function (categoryClickedId) {
+        $scope.selectedCategoryId = categoryClickedId;
+    }
+
 }]);

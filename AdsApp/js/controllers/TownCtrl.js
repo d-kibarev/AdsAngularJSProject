@@ -8,4 +8,7 @@ app.controller('TownCtrl', ['$scope', 'townService', function ($scope, townServi
         $scope.towns = data;
     });
     
+    $scope.townClicked = function (townClickedId) {
+        $scope.selectedTownId = townClickedId;
+    }
 }]);
