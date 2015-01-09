@@ -59,9 +59,11 @@
   <ItemGroup>
     <Content Include="css\semantic.css" />
     <Content Include="img\loader_green.gif" />
+    <Content Include="js\controllers\CategoryCtrl.js" />
     <Content Include="js\controllers\PublicAdsCtrl.js" />
     <Content Include="js\controllers\TownCtrl.js" />
     <Content Include="js\services\adService.js" />
+    <Content Include="js\services\categoryService.js" />
     <Content Include="js\services\townService.js" />
     <Content Include="lib\angular\angular-animate.min.js.map" />
     <Content Include="lib\angular\angular-cookies.min.js.map" />
@@ -93,7 +95,7 @@
     <Content Include="js\controllers\HomeCtrl.js" />
     <Content Include="js\controllers\LoginCtrl.js" />
     <Content Include="js\controllers\RegisterCtrl.js" />
-    <Content Include="js\directives\categories.js" />
+    <Content Include="js\directives\category.js" />
     <Content Include="js\directives\left-sidebar.js" />
     <Content Include="js\directives\public-ads.js" />
     <Content Include="js\directives\town.js" />
@@ -372,7 +374,7 @@
     <Content Include="lib\jquery.noty\jquery.noty.js" />
     <Content Include="lib\jQuery\jquery-2.1.3.min.js" />
     <Content Include="lib\semantic\semantic.js" />
-    <Content Include="templates\directives\categories.html" />
+    <Content Include="templates\directives\category.html" />
     <Content Include="templates\home.html" />
     <Content Include="templates\directives\left-sidebar.html" />
     <Content Include="templates\directives\public-ads.html" />
