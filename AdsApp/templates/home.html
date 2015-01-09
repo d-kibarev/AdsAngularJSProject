@@ -1,5 +1,9 @@
 ﻿<header id="app-header">
     <h1>Ads - {{headerTitle}}</h1>
+    <div ng-if="authService.isLoggedIn()" class="user-area">
+        <span>{{authService.getCurrentUser().username}}</span>
+        <a ng-click="logout()" class="link">Logout</a>
+    </div>
 </header>
 <div id="wrapper">
     <div class="row">
