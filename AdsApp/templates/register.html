@@ -6,49 +6,55 @@
         <left-sidebar2></left-sidebar2>
     </div>
     <div class="col-md-7">
-        <div class="box">
+        <div class="box" style="height:320px">
             <h1>User Registration</h1>
+            <hr />
 
-            <div class="ui form segment">
-                <div class="field">
-                    <label for="Username">Username</label>
-                    <input id="Username" placeholder="Username" type="text" ng-model="user.username" />
-                </div>
-                <div class="two fields">
-                    <div class="field">
+            <form role="form" style="width:700px; display:inline-flexbox">
+                <div style="width:200px">
+                    <div class="form-group">
+                        <label for="Username">Username</label>
+                        <input id="Username" placeholder="Username" type="text" ng-model="user.username" required />
+                    </div>
+                    <div class="form-group">
                         <label for="Password">Password</label>
-                        <input id="Password" type="password" placeholder="Password" ng-model="user.password">
+                        <input id="Password" type="password" placeholder="Password" ng-model="user.password" required>
                     </div>
-
-                    <div class="field">
-                        <label for="PasswordConfirm">Password Confirm</label>
-                        <input id="PasswordConfirm" type="password" placeholder="Password Confirm" ng-model="user.confirmPassword">
-                    </div>
-
-                    <div class="field">
+                    <div class="form-group">
                         <label for="Name">Name</label>
-                        <input id="Name" placeholder="Name" type="text" ng-model="user.name">
+                        <input id="Name" placeholder="Name" type="text" ng-model="user.name" required>
                     </div>
-
-                    <div class="field">
-                        <label for="Email">Email</label>
-                        <input id="Email" placeholder="Email" type="text" ng-model="user.email">
-                    </div>
-
-                    <div class="field">
+                    <div class="form-group">
                         <label for="Phone">Phone</label>
-                        <input id="Phone" placeholder="Phone" type="number" ng-model="user.phone">
+                        <input id="Phone" placeholder="Phone" type="number" ng-model="user.phone" required="required">
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="button" ng-click="register(user)"><span class="glyphicon glyphicon-lock"></span> Register</button>
+                    </div>
+                    </div>
+                <div style="width:200px">
+                    <div class="form-group">
+                        <label for="PasswordConfirm">Password Confirm</label>
+                        <input id="PasswordConfirm" type="password" placeholder="Password Confirm" ng-model="user.confirmPassword" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="Email">Email</label>
+                        <input id="Email" placeholder="Email" type="text" ng-model="user.email" required>
                     </div>
 
-                    <div class="field">
+                    <div class="form-group">
                         <label for="Town">Town</label>
-                        <select id="Town" ng-options="town.id as town.name for town in towns" ng-model="user.selected.town.id"></select>
+                        <select id="Town" ng-model="user.town">
+                            <!--<select id="Town" ng-options="town.id as town.name for town in towns" ng-model="user.town.id" required>-->
+                            <option selected="selected" value="null">None</option>
+                            <option ng-repeat="town in towns" value="{{town.id}}">{{town.name}}</option>
+                        </select>
                     </div>
-
+                    <div class="form-group">
+                        <a href="#/login" style="text-decoration: none; border-bottom: blue 1px dotted;">Login here</a>
+                    </div>
                 </div>
-
-                <button class="btn btn-primary" ng-click="register(user)">Submit</button>
-            </div>
+            </form>
         </div>
     </div>
 </div>
