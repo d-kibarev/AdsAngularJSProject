@@ -58,6 +58,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="css\semantic.css" />
+    <Content Include="js\controllers\PublicAdsCtrl.js" />
+    <Content Include="js\services\adsData.js" />
     <Content Include="js\services\towns.js" />
     <Content Include="lib\angular\angular-animate.min.js.map" />
     <Content Include="lib\angular\angular-cookies.min.js.map" />
