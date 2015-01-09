@@ -58,6 +58,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="css\semantic.css" />
+    <Content Include="img\loader_green.gif" />
     <Content Include="js\controllers\PublicAdsCtrl.js" />
     <Content Include="js\controllers\TownCtrl.js" />
     <Content Include="js\services\adService.js" />
