@@ -1,8 +1,8 @@
 ﻿'use strict';
-app.controller('RegisterCtrl', ['$scope', 'towns', function ($scope, towns) {
+app.controller('RegisterCtrl', ['$scope', 'townService', function ($scope, townService) {
     $scope.headerTitle = 'Registration';
 
-    towns.getTowns()
+    townService.getTowns()
     .$promise
     .then(function (data) {
         $scope.towns = data;
