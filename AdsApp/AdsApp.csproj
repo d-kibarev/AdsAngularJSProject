@@ -63,7 +63,9 @@
     <Content Include="js\controllers\PublicAdsCtrl.js" />
     <Content Include="js\controllers\TownCtrl.js" />
     <Content Include="js\services\adService.js" />
+    <Content Include="js\services\authService.js" />
     <Content Include="js\services\categoryService.js" />
+    <Content Include="js\services\notyService.js" />
     <Content Include="js\services\townService.js" />
     <Content Include="lib\angular\angular-animate.min.js.map" />
     <Content Include="lib\angular\angular-cookies.min.js.map" />
