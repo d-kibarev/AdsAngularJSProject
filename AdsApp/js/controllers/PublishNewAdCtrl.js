@@ -1,5 +1,5 @@
 ﻿app.controller('PublishNewAdCtrl', ['$scope', '$location', 'townService', 'categoryService', 'userService', 'notyService',
-    function myfunction($scope, $location, townService, categoryService, userService, notyService) {
+    function ($scope, $location, townService, categoryService, userService, notyService) {
 
         $scope.headerTitle = "Publish New Ad";
         $scope.adData = { townId: null, categoryId: null };

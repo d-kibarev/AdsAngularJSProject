@@ -33,3 +33,12 @@ app.directive('leftsidebarnewad', function () {
         replace: true
     };
 });
+
+app.directive('leftsidebaruserad', function () {
+    return {
+        controller: 'UserAdsCtrl',
+        restrict: 'E',
+        templateUrl: 'templates/directives/left-sidebar.html',
+        replace: true
+    };
+});

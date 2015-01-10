@@ -64,6 +64,7 @@
     <Content Include="js\controllers\PublicAdsCtrl.js" />
     <Content Include="js\controllers\PublishNewAdCtrl.js" />
     <Content Include="js\controllers\TownCtrl.js" />
+    <Content Include="js\controllers\UserAdsCtrl.js" />
     <Content Include="js\services\adService.js" />
     <Content Include="js\services\authService.js" />
     <Content Include="js\services\categoryService.js" />
@@ -143,6 +144,7 @@
     <Content Include="templates\partial\header.html" />
     <Content Include="templates\publish-new-ad.html" />
     <Content Include="templates\register.html" />
+    <Content Include="templates\user-ads.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
