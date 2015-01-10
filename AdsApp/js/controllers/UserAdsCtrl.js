@@ -1,4 +1,4 @@
-﻿app.controller('UserAdsCtrl', ['$scope', 'userService', function ($scope, userService) {
+﻿app.controller('UserAdsCtrl', ['$scope', 'userService', 'notyService', function ($scope, userService, notyService) {
     $scope.isReady = false;
     $scope.headerTitle = "My Ads";
 
@@ -12,4 +12,15 @@
             function (error) {
                 console.log(error);
             });
+
+    $scope.deactivateUserAd = function (adId) {
+        userService.deactivateUserAd(adId,
+            function success() {
+            notyService.showInfo("User account created! Please login.");
+        },
+            function error() {
+                notyService.showError("Registretion error! ", err);
+            })
+        console.log(adId);
+    }
 }]);

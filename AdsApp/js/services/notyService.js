@@ -8,7 +8,7 @@ app.factory('notyService',
                     text: msg,
                     type: 'success',
                     layout: 'topCenter',
-                    timeout: 1000
+                    timeout: 3000
                 }
                 );
             },

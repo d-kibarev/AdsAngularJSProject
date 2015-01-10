@@ -34,7 +34,19 @@
              });
 
             return defer.promise;
+        },
+
+        deactivateUserAd: function (adId, success, error) {
+            
+            var request = {
+                method: 'PUT',
+                headers: headers,
+                url: baseUrl + 'user/ads/deactivate/' + adId
+            };
+
+            $http(request).success(function (data) {
+                success(data);
+            }).error(error);
         }
     }
-
 }]);

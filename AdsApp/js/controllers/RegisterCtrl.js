@@ -12,10 +12,10 @@ app.controller('RegisterCtrl', ['$scope', 'townService', 'authService', 'notySer
         if (user && user.username && user.password && user.name && user.phone && user.email && user.confirmPassword && user.town) {
             authService.register(user,
                 function success() {
-                    notyService.showInfo("User account created! Please login.");
+                    notyService.showInfo("Ad is deactivating.");
                 },
                 function error() {
-                    notyService.showError("Registretion error! ", err);
+                    notyService.showError("Deactivation ad error! ", err);
                 }
                 );
         }
