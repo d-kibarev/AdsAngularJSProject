@@ -6,9 +6,38 @@
     <div class="row">
         <div class="col-md-2">
             <leftsidebaruserad></leftsidebaruserad>
+            <div class="box">
+                <h1>My Ads</h1>
+                <hr />
+                <ul class="sidebar-menu">
+                    <li class="selected"><a href="#">All</a></li>
+                    <li><a href="#">Published</a></li>
+                    <li><a href="#">Waithing Approval</a></li>
+                    <li><a href="#">Inactive</a></li>
+                    <li><a href="#">Rejected</a></li>
+                </ul>
+            </div>
         </div>
         <div class="col-md-7">
-            <div ng-include="'templates/directives/public-ads.html'"></div>
-        </div>
+                <img src="../../img/loader_green.gif" alt="Loading..." ng-hide="isReady" />
+                <ul ng-cloak class="ads">
+                    <li ng-repeat="ad in myAdsData.ads" class="box" data-id="{{ad.id}}">
+                        <h1>{{ad.title}}</h1>
+                        <div><strong>Date:</strong> {{ad.date | date:'dd-MMM-yyyy'}}</div>
+                        <div ng-if='ad.imageDataUrl'>
+                            <strong>Image: </strong><img class="ad-image" ng-src="{{ad.imageDataUrl}}" />
+                        </div>
+                        <div>{{ad.text}}</div>
+                        <div><strong>Category: </strong> {{ad.categoryName}}</div>
+                        <div><strong>Town: </strong> {{ad.townName}}</div>
+                        <div><strong>Status: </strong> {{ad.status}}</div>
+                        <button class="button">Deactivate</button>
+                    </li>
+                </ul>
+            
+                <div ng-if="ads.ads.length==0" class="box no-data">
+                    No ads found.
+                </div>
+            </div>
     </div>
 </div>
