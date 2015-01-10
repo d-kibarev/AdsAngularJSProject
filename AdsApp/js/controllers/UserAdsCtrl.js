@@ -2,22 +2,27 @@
     $scope.isReady = false;
     $scope.headerTitle = "My Ads";
 
-    userService.getUserAds()
-    .then(
-            function (data) {
-                $scope.myAdsData = data;
-                $scope.isReady = true;
-                console.log(data);
-            },
-            function (error) {
-                console.log(error);
-            });
+    $scope.loadUserAds = function () {
+
+        userService.getUserAds()
+        .then(
+                function (data) {
+                    $scope.myAdsData = data;
+                    $scope.isReady = true;
+                },
+                function (error) {
+                    console.log(error);
+                });
+    };
+
+    $scope.loadUserAds();
 
     $scope.deactivateUserAd = function (adId) {
         userService.deactivateUserAd(adId,
             function success() {
                 notyService.showInfo("Ad is deactivated.");
-                $location.path("/user/ads");
+                $scope.isReady = false;
+                $scope.loadUserAds();
         },
             function error() {
                 notyService.showError("Deactivation ad error!", err);
@@ -28,7 +33,8 @@
         userService.deleteUserAd(adId,
             function success() {
                 notyService.showInfo("Ad is deleted.");
-                $location.path("/user/ads");
+                $scope.isReady = false;
+                $scope.loadUserAds();
             },
             function error() {
                 notyService.showError("Error while deleting ad!", err);

@@ -18,10 +18,10 @@
         <h1>Navigation</h1>
         <hr />
         <ul class="sidebar-menu">
-            <li class="selected"><a href="#/">Home</a></li>
-            <li><a href="#/user/ads">My Ads</a></li>
-            <li><a href="#/user/ads/publish">Publish New Ad</a></li>
-            <li><a href="#/user/profile">Edit Profile</a></li>
+            <li ng-class="{'selected' : headerTitle == 'Home'}"><a href="#/">Home</a></li>
+            <li ng-class="{'selected' : headerTitle == 'My Ads'}"><a href="#/user/ads">My Ads</a></li>
+            <li ng-class="{'selected' : headerTitle == 'Publish New Ad'}"><a href="#/user/ads/publish">Publish New Ad</a></li>
+            <li ng-class="{'selected' : headerTitle == 'Edit Profile'}"><a href="#/user/profile">Edit Profile</a></li>
         </ul>
     </div>
 </div>
