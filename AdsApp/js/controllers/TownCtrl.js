@@ -1,6 +1,6 @@
 ﻿'use strict';
 
-app.controller('TownCtrl', ['$scope', 'townService', function ($scope, townService) {
+app.controller('TownCtrl', ['$scope', '$rootScope', 'townService', function ($scope, $rootScope, townService) {
     
     townService.getTowns()
     .$promise
@@ -10,5 +10,6 @@ app.controller('TownCtrl', ['$scope', 'townService', function ($scope, townServi
     
     $scope.townClicked = function (townClickedId) {
         $scope.selectedTownId = townClickedId;
+        $rootScope.$broadcast("townSelectionChanged", townClickedId);
     }
 }]);

@@ -1,6 +1,6 @@
 ﻿'use strict';
 
-app.controller('CategoryCtrl', ['$scope', 'categoryService', function ($scope, categoryService) {
+app.controller('CategoryCtrl', ['$scope', '$rootScope', 'categoryService', function ($scope, $rootScope, categoryService) {
 
     categoryService.getAllCategories()
     .$promise
@@ -10,6 +10,7 @@ app.controller('CategoryCtrl', ['$scope', 'categoryService', function ($scope, c
 
     $scope.categoryClicked = function (categoryClickedId) {
         $scope.selectedCategoryId = categoryClickedId;
+        $rootScope.$broadcast("categorySelectionChanged", categoryClickedId);
     }
 
 }]);
