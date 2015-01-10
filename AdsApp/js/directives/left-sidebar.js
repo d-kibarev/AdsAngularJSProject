@@ -7,7 +7,7 @@
     };
 });
 
-app.directive('leftSidebar1', function () {
+app.directive('leftsidebarlogin', function () {
     return {
         controller: 'LoginCtrl',
         restrict: 'E',
@@ -16,9 +16,18 @@ app.directive('leftSidebar1', function () {
     };
 });
 
-app.directive('leftSidebar2', function () {
+app.directive('leftsidebarregister', function () {
     return {
         controller: 'RegisterCtrl',
+        restrict: 'E',
+        templateUrl: 'templates/directives/left-sidebar.html',
+        replace: true
+    };
+});
+
+app.directive('leftsidebarnewad', function () {
+    return {
+        controller: 'PublishNewAdCtrl',
         restrict: 'E',
         templateUrl: 'templates/directives/left-sidebar.html',
         replace: true
