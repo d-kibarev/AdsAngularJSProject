@@ -42,3 +42,12 @@ app.directive('leftsidebaruserad', function () {
         replace: true
     };
 });
+
+app.directive('leftsidebardel', function () {
+    return {
+        controller: 'DeleteAdCtrl',
+        restrict: 'E',
+        templateUrl: 'templates/directives/left-sidebar.html',
+        replace: true
+    };
+});

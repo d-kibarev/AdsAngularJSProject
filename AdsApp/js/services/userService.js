@@ -47,6 +47,19 @@
             $http(request).success(function (data) {
                 success(data);
             }).error(error);
+        },
+
+        deleteUserAd: function (adId, success, error) {
+
+            var request = {
+                method: 'DELETE',
+                headers: headers,
+                url: baseUrl + 'user/ads/' + adId
+            };
+
+            $http(request).success(function (data) {
+                success(data);
+            }).error(error);
         }
     }
 }]);

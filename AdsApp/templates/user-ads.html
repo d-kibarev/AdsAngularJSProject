@@ -31,7 +31,14 @@
                         <div><strong>Category: </strong> {{ad.categoryName}}</div>
                         <div><strong>Town: </strong> {{ad.townName}}</div>
                         <div><strong>Status: </strong> {{ad.status}}</div>
-                        <button ng-click="deactivateUserAd(ad.id)" class="button">Deactivate</button>
+                        <div ng-if="ad.status == 'WaitingApproval'">
+                            <button ng-click="deactivateUserAd(ad.id)" class="button">Deactivate</button>
+                        </div>
+                        <div ng-if="ad.status == 'Inactive'">
+                            <button class="button">Edit</button>
+                            <button class="button">Publish Again</button>
+                            <button ng-click="deleteUserAd(ad.id)" class="button">Delete</button>
+                        </div>
                     </li>
                 </ul>
             

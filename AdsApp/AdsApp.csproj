@@ -61,6 +61,7 @@
     <Content Include="img\loader_green.gif" />
     <Content Include="js\controllers\AppCtrl.js" />
     <Content Include="js\controllers\CategoryCtrl.js" />
+    <Content Include="js\controllers\DeleteAdCtrl.js" />
     <Content Include="js\controllers\PublicAdsCtrl.js" />
     <Content Include="js\controllers\PublishNewAdCtrl.js" />
     <Content Include="js\controllers\TownCtrl.js" />
@@ -135,6 +136,7 @@
     <Content Include="lib\jquery.noty\jquery.noty.js" />
     <Content Include="lib\jQuery\jquery-2.1.3.min.js" />
     <Content Include="lib\semantic\semantic.js" />
+    <Content Include="templates\delete-ad.html" />
     <Content Include="templates\directives\category.html" />
     <Content Include="templates\home.html" />
     <Content Include="templates\directives\left-sidebar.html" />
