@@ -136,6 +136,7 @@
     <Content Include="lib\jquery.noty\jquery.noty.js" />
     <Content Include="lib\jQuery\jquery-2.1.3.min.js" />
     <Content Include="lib\semantic\semantic.js" />
+    <Content Include="lib\ui.bootstrap\ui.bootstrap.pagination-0.12.0.js" />
     <Content Include="templates\delete-ad.html" />
     <Content Include="templates\directives\category.html" />
     <Content Include="templates\home.html" />
@@ -144,6 +145,7 @@
     <Content Include="templates\directives\town.html" />
     <Content Include="templates\login.html" />
     <Content Include="templates\partial\header.html" />
+    <Content Include="templates\pagination\pagination.html" />
     <Content Include="templates\publish-new-ad.html" />
     <Content Include="templates\register.html" />
     <Content Include="templates\user-ads.html" />

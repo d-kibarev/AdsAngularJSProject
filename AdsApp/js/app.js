@@ -1,8 +1,9 @@
 ﻿'use strict';
 
-var app = angular.module('adsApp', ['ngRoute', 'ngResource']);
+var app = angular.module('adsApp', ['ngRoute', 'ngResource', 'ui.bootstrap.pagination']);
 
 app.constant('baseUrl', 'http://softuni-ads.azurewebsites.net/api/');
+app.constant('pageSize', 2);
 
 app.config(['$routeProvider', function ($routeProvider) {
     $routeProvider.when('/', {

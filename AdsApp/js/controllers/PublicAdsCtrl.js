@@ -1,8 +1,8 @@
-﻿app.controller('PublicAdsCtrl', ['$scope', 'adService', function myfunction($scope, adService) {
+﻿app.controller('PublicAdsCtrl', ['$scope', 'adService', 'pageSize', 'notyService', function myfunction($scope, adService, pageSize, notyService) {
     $scope.isReady = false;
     $scope.adsParams = {
         'startPage': 1,
-        'pageSize': 10
+        'pageSize': 3
     };
 
     $scope.reloadAds = function () {
