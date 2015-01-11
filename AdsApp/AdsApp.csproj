@@ -57,7 +57,6 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="css\semantic.css" />
     <Content Include="img\loader_green.gif" />
     <Content Include="js\controllers\AppCtrl.js" />
     <Content Include="js\controllers\CategoryCtrl.js" />
