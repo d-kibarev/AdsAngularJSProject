@@ -1,5 +1,6 @@
 ﻿'use strict';
-app.controller('RegisterCtrl', ['$scope', 'townService', 'authService', 'notyService', function ($scope, townService, authService, notyService) {
+app.controller('RegisterCtrl', ['$scope', '$location', 'townService', 'authService', 'notyService',
+    function ($scope, $location, townService, authService, notyService) {
     $scope.headerTitle = 'Registration';
 
     townService.getTowns()
@@ -12,7 +13,8 @@ app.controller('RegisterCtrl', ['$scope', 'townService', 'authService', 'notySer
         if (user && user.username && user.password && user.name && user.phone && user.email && user.confirmPassword && user.town) {
             authService.register(user,
                 function success() {
-                    notyService.showInfo("User account created! Please login.");
+                    notyService.showInfo("User account created! You are logged.");
+                    $location.path('/');
                 },
                 function error() {
                     notyService.showError("Registretion error!", err);
