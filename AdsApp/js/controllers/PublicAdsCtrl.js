@@ -2,10 +2,11 @@
     $scope.isReady = false;
     $scope.adsParams = {
         'startPage': 1,
-        'pageSize': 3
+        'pageSize': 2
     };
 
     $scope.reloadAds = function () {
+        $scope.isReady = false;
         adService.getAllAds(
             $scope.adsParams,
             function success(data) {

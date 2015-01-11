@@ -16,12 +16,13 @@
             }).error(error);
         },
 
-        getUserAds: function () {
+        getUserAds: function (params) {
 
             var defer = $q.defer();
             var request = {
                 method: 'GET',
                 headers: headers,
+                params: params,
                 url: baseUrl + 'user/ads'
             };
 

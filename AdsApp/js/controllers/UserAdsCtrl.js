@@ -1,10 +1,14 @@
 ﻿app.controller('UserAdsCtrl', ['$scope', '$location', 'userService', 'notyService', function ($scope, $location, userService, notyService) {
     $scope.isReady = false;
     $scope.headerTitle = "My Ads";
+    $scope.userAdsParams = {
+        'startPage': 1,
+        'pageSize': 3
+    };
 
     $scope.loadUserAds = function () {
-
-        userService.getUserAds()
+        $scope.isReady = false;
+        userService.getUserAds($scope.userAdsParams)
         .then(
                 function (data) {
                     $scope.myAdsData = data;

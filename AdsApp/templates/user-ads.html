@@ -45,6 +45,11 @@
             <div ng-if="myAdsData.ads.length==0" class="box no-data">
                 No ads found.
             </div>
-            </div>
+
+            <pagination total-items="myAdsData.numItems" ng-model="userAdsParams.startPage"
+                        items-per-page="userAdsParams.pageSize" ng-change="loadUserAds()"
+                        max-size="9" boundary-links="true">
+            </pagination>
+        </div>
     </div>
 </div>

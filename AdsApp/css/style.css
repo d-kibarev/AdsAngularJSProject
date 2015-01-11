@@ -39,9 +39,14 @@ body {
     margin: 5px;
 }
 
-ul.pagination {
+.pagination {
     display: table;
     margin: 15px auto;
+}
+
+.pagination>li>a, .pagination>li>span {
+    color:black;
+    background-color: #A9D18E;
 }
 
 ul.ads {
