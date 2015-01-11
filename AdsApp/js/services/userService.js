@@ -61,6 +61,19 @@
             $http(request).success(function (data) {
                 success(data);
             }).error(error);
+        },
+
+        publishAgain: function (adId, success, error) {
+
+            var request = {
+                method: 'PUT',
+                headers: headers,
+                url: baseUrl + 'user/ads/publishagain/' + adId
+            };
+
+            $http(request).success(function (data) {
+                success(data);
+            }).error(error);
         }
     }
 }]);

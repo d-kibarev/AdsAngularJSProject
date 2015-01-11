@@ -43,5 +43,17 @@
             function error() {
                 notyService.showError("Error while deleting ad!", err);
             })
+    },
+
+    $scope.publishAgain = function (adId) {
+        userService.publishAgain(adId,
+            function success() {
+                notyService.showInfo("Ad is published.");
+                $scope.isReady = false;
+                $scope.loadUserAds();
+            },
+            function error() {
+                notyService.showError("Publish error!", err);
+            })
     }
 }]);

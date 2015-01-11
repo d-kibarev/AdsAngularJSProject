@@ -36,7 +36,7 @@
                         </div>
                         <div ng-if="ad.status == 'Inactive'">
                             <button class="button">Edit</button>
-                            <button class="button">Publish Again</button>
+                            <button ng-click="publishAgain(ad.id)" class="button">Publish Again</button>
                             <button ng-click="deleteUserAd(ad.id)" class="button">Delete</button>
                         </div>
                     </li>
